@@ -56,7 +56,7 @@ namespace CodePulse.API.Controllers
             return Ok(response);
         }
 
-        // GET by ID : https://localhost:7180/api/Categories/{id}
+        // GET by id : https://localhost:7180/api/Categories/{id}
         [HttpGet]
         [Route("{id:Guid}")]
         public async Task<IActionResult> GetCategoryById([FromRoute]Guid id)
